@@ -22,7 +22,9 @@
       "extensions": [
         "openai.chatgpt",
         "dbaeumer.vscode-eslint",
-        "esbenp.prettier-vscode"
+        "esbenp.prettier-vscode",
+        "eamodio.gitlens",
+        "github.vscode-pull-request-github"
       ]
     }
   }
