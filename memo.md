@@ -12,7 +12,7 @@ App.tsx
 ```
 function App() {
   // JavaScriptのコードを書く
-  
+
   return (
    /* HTMLで画面の見た目部分を書く */
   )
@@ -24,6 +24,11 @@ export default App
 ## データ型チェック
 
 MPAではよくDBから取得したデータとの型不一致が起こるとエラーになるがTypeScriptはあくまでコンパイル時に方チェックをする。つまりAPIで取得するデータの方はコンパイル時にチェックされない。これをチェックするためにはJSやTSで一つずつチェックする必要がある。さすがにそれはめんどいからZodというライブラリが使われるらしい。知らんかった。そもそもJSにもデータ型は存在したみたい。
+
+## state
+
+stateはjavascriptメモリっていうsessionStorageやlocalStorageとは別らしい。
+useState("");で初期化しておいてset○○で値を設定（reactが用意した関数）。値が変わるとreactが再レンダリングする。でも再レンダリングって言っても差分のみ描画するらしい。リコンシリエーション（DOMツリー比較）
 
 ## strictmode
 
